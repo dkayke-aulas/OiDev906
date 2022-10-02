@@ -1,0 +1,39 @@
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px calc(100vh - 450px) 300px 50px;
+}
+
+header {
+    background-color: lightcoral;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+nav {
+    background-color: lightskyblue;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+aside {
+    background-color: lightgreen;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+main {
+    background-color: lightgoldenrodyellow;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+footer {
+    background-color: lightsalmon;
+    grid-column: 1/-1;
+}

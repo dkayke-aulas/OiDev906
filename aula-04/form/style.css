@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.box1 {
+    width: 100px;
+    border: 2px solid red;
+    padding: 2px;
+    box-sizing: content-box;
+}
+
+.box2 {
+    width: 100px;
+    border: 2px solid red;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    box-sizing: border-box;
+    width: 100%;
+}
