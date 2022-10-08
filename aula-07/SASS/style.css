@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.circuloVermelho {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 102);
+}
+
+.quadradoVermelhoComBorda {
+  height: 200px;
+  width: 200px;
+  border-radius: 0;
+  background-color: rgb(255, 0, 102);
+  border: 5px solid green;
+}
+
+.circuloAzul {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: blue;
+}
+
+section {
+  padding: 5px;
+  background-color: #dadada;
+}
+section div {
+  background-color: red;
+}
+section .banana {
+  height: 100px;
+  background-color: rgba(127, 255, 212, 0.561);
+}
+section .banana a {
+  text-decoration: none;
+}
+section .banana a:hover {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+section[id] {
+  border-bottom: 5px solid chocolate;
+  height: 100vh;
+  padding-top: 30px;
+}
+section[id]:nth-child(even) {
+  background-color: bisque;
+}
+
+header {
+  box-sizing: border-box;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  background: lightcoral;
+  padding: 5px;
+  color: #fff;
+  left: 0;
+  right: 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+header nav a {
+  width: 100%;
+  flex: 1;
+  background-color: cornflowerblue;
+  text-align: center;
+  text-decoration: none;
+  color: azure;
+}
+header nav a:hover {
+  background-color: azure;
+  color: cornflowerblue;
+}/*# sourceMappingURL=style.css.map */

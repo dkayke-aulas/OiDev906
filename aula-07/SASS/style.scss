@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+$cor-vermelha: rgb(255, 0, 102);
+$cor-azul: blue;
+
+@mixin criarCirculo($cor, $tamanho:200px, $radius:50%) {
+    height: $tamanho;
+    width: $tamanho;
+    border-radius: $radius;
+    background-color: $cor;
+}
+
+.circuloVermelho {
+    @include criarCirculo($cor-vermelha);
+}
+
+.quadradoVermelhoComBorda {
+    @include criarCirculo($cor-vermelha, 200px, 0);
+    border: 5px solid green;
+}
+
+.circuloAzul {
+    @include criarCirculo($cor-azul, 100px, 50px);
+}
+
+section {
+    padding: 5px;
+    background-color: #dadada;
+
+    div {
+        background-color: red;
+    }
+
+    .banana {
+        height: 100px;
+        background-color: rgba(127, 255, 212, 0.561);
+
+        a {
+            text-decoration: none;
+        
+            &:hover {
+                color: blueviolet;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+section[id] {
+    border-bottom: 5px solid chocolate;
+    height: 100vh;
+    padding-top: 30px;
+
+    
+    &:nth-child(even) {
+        background-color: bisque;
+    }
+}
+
+header {
+    box-sizing: border-box;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    background: lightcoral;
+    padding: 5px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        a {
+            width: 100%;
+            flex: 1;
+            background-color: cornflowerblue;
+            text-align: center;
+            text-decoration: none;
+            color: azure;
+
+            &:hover {
+                background-color: azure;
+                color: cornflowerblue;
+            }
+        }
+    }
+}

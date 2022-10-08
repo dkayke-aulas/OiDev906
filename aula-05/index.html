@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Inscrição para entregador</legend>
+                <h3>Dados Pessoais</h3>
+                <section>
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" name="nome" type="text" required>
+
+                    <label for="idade">Idade</label>
+                    <input id="idade" name="idade" type="number" required>
+
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required>
+                </section>
+
+                <h3>Disponibilidade e transporte</h3>
+                <section>
+                    <article>
+                        <input type="checkbox" name="disp1" id="disp1" value="manha">
+                        <label for="disp1">Manhã</label>
+                        
+                        <input type="checkbox" name="disp2" id="disp2"  value="tarde">
+                        <label for="disp2">Tarde</label>
+    
+                        <input type="checkbox" name="disp3" id="disp3"  value="noite">
+                        <label for="disp3">Noite</label>
+                    </article>
+
+
+                    <article>
+                        <input type="radio" name="veiculo" id="bicicleta" value="bicicleta">
+                        <label for="bicicleta">Bicicleta</label>
+
+                        <input type="radio" name="veiculo" id="moto" value="moto">
+                        <label for="moto">Moto</label>
+
+                        <input type="radio" name="veiculo" id="carro" value="carro">
+                        <label for="carro">Carro</label>
+                    </article>
+                    
+                </section>
+
+                <h3>Comentário</h3>
+                <section>
+                    <label for="tipo">Tipo de comentário</label>
+                    <select name="tipo-comentario" id="tipo">
+                        <option value="duvida">Dúvida</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+
+                    <label for="mensagem">Nos deixe uma mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" maxlength="400"></textarea>
+                </section>
+
+                <section class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                    <!-- <input type="reset" value="Limpar"> -->
+                </section>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+</body>
+</html>

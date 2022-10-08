@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-noticia {
+    flex: 1;
+    border: 1px solid blue;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.card-noticia-container-img {
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.card-noticia-container-txt {
+    background-color: blanchedalmond;
+    height: 100px;
+}
+
+.card-noticia button {
+    width: 100%;
+    max-width: 50px;
+    float: right;
+}
+
+.card-noticia article {
+    padding: 10px;
+}

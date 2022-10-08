@@ -1,0 +1,6 @@
+@import url('./cores.css');
+
+:root {
+    --cor-vermelha: var(--vermelho);
+    --cor-azul: #2d2ddf;
+}

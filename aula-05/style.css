@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+@font-face {
+    font-family: Banana;
+    src: url('./font/Peralta-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Banana;
+}
+
+main {
+  display: flex;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  /* vertical */
+  align-items: center;
+  /* horizontal */
+  justify-content: center;
+  overflow: auto;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+button,
+textarea,
+select {
+  width: 100%;
+  min-height: 48px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: blueviolet;
+}
+
+form {
+    width: 100%;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+section:last-child {
+    flex-direction: row;
+}
+
+button:hover {
+    background-color: #8e60ba;
+    cursor: pointer;
+}
+
+button {
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 16px;
+}
+
+button:first-child {
+/* button:nth-child(1) { */
+    flex: 2;
+}
+
+button:last-child {
+/* button:nth-child(2) { */
+    flex: 1;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+@media print {
+    label[for="tipo"], #tipo, .button-container {
+        display: none;
+    }
+}

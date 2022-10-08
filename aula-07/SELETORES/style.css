@@ -1,0 +1,91 @@
+/* div {
+    height: 50px;
+    background-color: aqua;
+} */
+
+/* .classe-01 {
+    background-color: aquamarine;
+}
+
+.classe-02 {
+    width: 50%;
+}
+
+.classe-03 {
+    color: aqua;
+}
+
+.classe-01 .span-01  {
+    background-color: blueviolet;
+} */
+
+/* span>p {
+    background-color: red;
+} */
+
+/* div~p {
+    background-color: red;
+}
+div+p {
+    background-color: blue;
+} */
+
+/* que contenha a palavra "prata" */
+/* [data-banana~="prata"] {
+    background-color: red;
+} */
+
+/* substring, possua o termo em ordem */
+/* [data-banana*="prata"] {
+    background-color: red;
+} */
+
+/* inicializa com um termo */
+/* [data-banana^="abac"] {
+    background-color: red;
+} */
+
+/* finaliza com um termo */
+/* [data-banana$="te"] {
+    background-color: red;
+} */
+
+/* ab ou ab- tem que ser exatamente igual ou separado por hifen */
+/* [data-banana|="ab"] {
+    background-color: red;
+} */
+
+/* pega o paragrafo que está dentro de uma div desde que ele seja o primeiro ou ultimo filho */
+/* div p:first-child {
+    color: red;
+}
+div p:last-child {
+    color: red;
+} */
+
+/* pega o parágrafo dentro de uma div desde que ele seja o primeiro filho */
+/* div p:nth-child(2) {
+    color: red;
+} */
+
+/* div p:not(:nth-child(3n)) {
+    background-color: red;
+} */
+
+/* p:first-child:hover+p{
+    background: red;
+} */
+
+/* p::first-letter {
+    color: red;
+} */
+
+/* p::first-line {
+    color: red;
+} */
+
+/* input:focus {
+    outline: 2px solid blue;
+    border: none;
+    background-color: red;
+} */

@@ -1,0 +1,37 @@
+/* mobile first */
+
+/* 
+    celular - 480px - 768px
+    tablet - 768px - 1024px
+    maiores - 1024px - 1200px
+    enormes - 1200px +
+*/
+
+/* @media (height > 250px) {
+
+
+    body {
+        background-color: aqua;
+    }
+
+} */
+
+@media (orientation: landscape) {
+    body {
+        background-color: aqua;
+    }
+
+}
+
+
+
+
+
+/* @media (min-width: 600px) {
+
+
+    body {
+        background-color: rgba(45, 14, 156, 0.534);
+    }
+
+} */

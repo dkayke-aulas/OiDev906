@@ -1,0 +1,15 @@
+@import url('./variaveis.css');
+
+.azul, .vermelho {
+    height: 50px;
+    width: 100px;
+}
+
+
+.azul {
+    background-color: var(--cor-azul);
+}
+
+.vermelho {
+    background-color: var(--cor-vermelha);
+}
