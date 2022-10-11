@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    /* height: 50px; */
+    /* background-color: blueviolet; */
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    box-sizing: border-box;
+    min-width: 100px;
+    color: white;
+    text-decoration: none;
+    /* flex: 1; */
+    text-align: center;
+    padding: 10px;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+nav a:hover { 
+    background-color: #c6c6c6;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+}
